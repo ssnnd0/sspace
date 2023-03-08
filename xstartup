@@ -1,0 +1,11 @@
+#!/bin/sh
+
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+#The following two lines were hashed out during the edit
+#xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+#twm &
+
+#To start a awesome session, uncomment line below:
+/usr/bin/awesome
