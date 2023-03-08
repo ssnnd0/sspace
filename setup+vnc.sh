@@ -23,7 +23,7 @@ echo "export WINEARCH=win32" >> ~/.bashrc
 
 sudo apt install firefox awesome -y
 
-cp /workspaces/VM/background.png /usr/share/awesome/themes/default/background.png
+cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
 
 sudo apt install tigervnc-standalone-server tigervnc-xorg-extension tigervnc-viewer -y
 
@@ -31,5 +31,5 @@ tigervncserver -geometry 1280x720
 
 git clone https://github.com/novnc/noVNC ~/noVNC/
 mkdir ~/.vnc/
-cp /workspaces/VM/xstartup ~/.vnc/xstartup
+cp /workspaces/CodespacesVM/xstartup ~/.vnc/xstartup
 ./noVNC/utils/novnc_proxy --vnc localhost:5901
