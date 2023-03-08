@@ -23,7 +23,7 @@ echo "export WINEARCH=win32" >> ~/.bashrc
 
 sudo apt install firefox awesome -y
 
-cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
+sudo cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
 
 sudo apt install tigervnc-standalone-server tigervnc-xorg-extension tigervnc-viewer -y
 
