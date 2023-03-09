@@ -21,9 +21,3 @@ Run vnc
 ```bash
   sh vnc.sh
 ```
-
-Start firefox
-
-```bash
-  sh firefox
-```
