@@ -9,3 +9,5 @@ vncconfig -iconic &
 
 #To start a awesome session, uncomment line below:
 /usr/bin/awesome
+
+firefox
