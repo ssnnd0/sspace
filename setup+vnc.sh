@@ -7,6 +7,7 @@ sudo dpkg --add-architecture i386
 wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 
+sudo apt install kubuntu-desktop
 sudo apt-get update
 sudo apt-get -y install winehq-stable
 
@@ -20,8 +21,8 @@ sudo wget -O /opt/wine-stable/share/wine/gecko/wine-gecko-2.47.1-x86_64.msi http
 echo "export WINEPREFIX=~/prefix32" >> ~/.bashrc
 echo "export WINEARCH=win32" >> ~/.bashrc
 
-
 sudo apt install firefox awesome -y
+sudo apt-get install steam
 
 sudo cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
 
