@@ -22,7 +22,10 @@ echo "export WINEPREFIX=~/prefix32" >> ~/.bashrc
 echo "export WINEARCH=win32" >> ~/.bashrc
 
 sudo apt install firefox awesome -y
-sudo apt-get install steam
+wget -q -O – https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add –
+sudo sh -c ‘echo “deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main” >> /etc/apt/sources.list.d/google-chrome.list’ -y
+sudo apt-get update -y
+sudo apt-get install google-chrome-stable -y
 
 sudo cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
 
