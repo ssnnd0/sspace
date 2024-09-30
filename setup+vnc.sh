@@ -7,7 +7,7 @@ sudo dpkg --add-architecture i386
 wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 
-sudo apt install kubuntu-desktop
+sudo apt install ubuntu-budgie-desktop
 sudo apt-get update
 sudo apt-get -y install winehq-stable
 
@@ -22,10 +22,11 @@ echo "export WINEPREFIX=~/prefix32" >> ~/.bashrc
 echo "export WINEARCH=win32" >> ~/.bashrc
 
 sudo apt install firefox awesome -y
-wget -q -O – https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add –
-sudo sh -c ‘echo “deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main” >> /etc/apt/sources.list.d/google-chrome.list’ -y
-sudo apt-get update -y
-sudo apt-get install google-chrome-stable -y
+cd /Downloads 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
+cd ~
 
 sudo cp /workspaces/CodespacesVM/background.png /usr/share/awesome/themes/default/background.png
 
