@@ -7,7 +7,30 @@ sudo dpkg --add-architecture i386
 wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 
-sudo apt install ubuntu-budgie-desktop
+#sudo apt-get install kubuntu-desktop
+#sudo apt-get install lubuntu-desktop
+#sudo apt-get install xubuntu-desktop
+#sudo apt-get install ubuntu-budgie-desktop
+
+#sudo add-apt-repository ppa:ubuntudde-dev/stable
+#sudo apt install ubuntudde-dde
+
+#sudo apt-get install xfce
+sudo apt-get install fluxbox
+#sudo apt install i3 
+#sudo apt install bspwm 
+#sudo apt install herbstluftwm
+#sudo apt install tilix
+#sudo apt install xmonad
+#sudo apt install sway
+#sudo apt install tmux
+#sudo apt install spectrwm  
+#sudo apt install jwm
+#sudo apt install qtile 
+#sudo apt install ratpoison
+#sudo apt install dwm 
+#sudo apt install notion
+
 sudo apt-get update
 sudo apt-get -y install winehq-stable
 
