@@ -11,6 +11,9 @@ sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal mai
 #sudo apt-get install lubuntu-desktop
 #sudo apt-get install xubuntu-desktop
 #sudo apt-get install ubuntu-budgie-desktop
+#sudo apt install -y ubuntu-mate-desktop
+#sudo apt install -y kde-plasma-desktop
+#sudo apt install -y ubuntu-gnome-desktop
 
 #sudo add-apt-repository ppa:ubuntudde-dev/stable
 #sudo apt install ubuntudde-dde
@@ -26,7 +29,6 @@ sudo apt-get install fluxbox
 #sudo apt install tmux
 #sudo apt install spectrwm  
 #sudo apt install jwm
-#sudo apt install qtile 
 #sudo apt install ratpoison
 #sudo apt install dwm 
 #sudo apt install notion
@@ -44,7 +46,7 @@ sudo wget -O /opt/wine-stable/share/wine/gecko/wine-gecko-2.47.1-x86_64.msi http
 echo "export WINEPREFIX=~/prefix32" >> ~/.bashrc
 echo "export WINEARCH=win32" >> ~/.bashrc
 
-sudo apt install firefox awesome -y
+sudo apt install firefox -y
 cd /Downloads 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
